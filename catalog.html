@@ -82,42 +82,48 @@
     </ul>
     <aside class="catalog-filter-items">
       <h3>Фильтр</h3>
-      <form>
-        <div class="catalog-filter-price">
-          <h4>Стоимость</h4>
-          <label>0<input type="range" min="0" max="8000"/>8000</label>
-        </div>
-        <div class="catalog-filter-color">
-          <h4>Цвет</h4>
-          <ul class="catalog-filter-color-list">
-            <li>
-              <label><input type="checkbox" name="black" value="black" checked/>Черный</label>
-            </li>
-            <li>
-              <label><input type="checkbox" name="white" value="white" />Белый</label>
-            </li>
-            <li>
-              <label><input type="checkbox" name="blue" value="blue" checked/>Синий</label>
-            </li>
-            <li>
-              <label><input type="checkbox" name="red" value="red" checked/>Красный</label>
-            </li>
-            <li>
-              <label><input type="checkbox" name="pink" value="pink" />Розовый</label>
-            </li>
-          </ul>
-        </div>
-        <div class="catalog-filter-bluetooth">
-          <h4>Bluetooth</h4>
-          <ul class="catalog-filter-bluetooth-list">
-            <li>
-              <label><input type="radio" name="bluetooth" value="yes" />Есть</label>
-            </li>
-            <li>
-              <label><input type="radio" name="bluetooth" value="no" />Нет</label>
-            </li>
-          </ul>
-        </div>
+      <form method="get" action="#">
+        <fieldset>
+          <div class="catalog-filter-price">
+            <h4>Стоимость</h4>
+            <label>0<input type="range" min="0" max="8000"/>8000</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="catalog-filter-color">
+            <h4>Цвет</h4>
+            <ul class="catalog-filter-color-list">
+              <li>
+                <label><input type="checkbox" name="black" value="black" checked/>Черный</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="white" value="white" />Белый</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="blue" value="blue" checked/>Синий</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="red" value="red" checked/>Красный</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="pink" value="pink" />Розовый</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="catalog-filter-bluetooth">
+            <h4>Bluetooth</h4>
+            <ul class="catalog-filter-bluetooth-list">
+              <li>
+                <label><input type="radio" name="bluetooth" value="yes" />Есть</label>
+              </li>
+              <li>
+                <label><input type="radio" name="bluetooth" value="no" />Нет</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
       </form>
       <a class="btn" href="">Показать</a>
     </aside>
@@ -187,7 +193,9 @@
     </section>
   </main>
   <footer class="main-footer catalog">
-    <a href="#"><p class="logo">Device</p></a>
+    <a href="#">
+      <p class="logo">Device</p>
+    </a>
     <ul class="site-options footer">
       <li>
         <a href="#">Выйти</a>
