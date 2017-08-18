@@ -14,7 +14,7 @@
       <ul class="client-navigation">
         <li>
           <form action="#" method="get">
-            <label for="search"></label>
+            <label for="search"><span class="visually-hidden">Поиск по сайту</span></label>
             <input type="text" placeholder="Поиск по сайту" name="search" id="search">
           </form>
         </li>
@@ -28,6 +28,8 @@
           <a href="#">Корзина</a>
         </li>
       </ul>
+      <!--В моем понимании, "Войти", "Сравнить", "Корзина" - это все-таки ссылки, тк
+       перенаправляют пользователя на другую страницу сайта. Или я не права? -->
       <ul class="site-navigation">
         <li>
           <a href="#">Каталог товаров</a>
@@ -72,6 +74,7 @@
         Самая длинная палка для селфи доступна в нашем магазине.<br /> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
       </p>
       <a class="btn" href="#">Подробнее</a>
+      <h2 class="visually-hidden">Характеристики товара</h2>
       <table class="promo-item features">
         <tr class="promo-item-features-values">
           <td>
@@ -97,9 +100,9 @@
         </tr>
       </table>
       <form class="promo-items-menu">
-        <label><input type="radio" name="promo-item" value="selfie-stick" checked/></label>
-        <label><input type="radio" name="promo-item" value="fitnes-bracelet"/></label>
-        <label><input type="radio" name="promo-item" value="quadrocopter" /></label>
+        <label><input type="radio" name="promo-item" value="selfie-stick" checked/><span class="visually-hidden">Палка для селфи</span></label>
+        <label><input type="radio" name="promo-item" value="fitnes-bracelet"/><span class="visually-hidden">Фитнес-браслет</span></label>
+        <label><input type="radio" name="promo-item" value="quadrocopter" /><span class="visually-hidden">Квадрокоптер</span></label>
       </form>
     </article>
     <article class="promo-item">
@@ -109,6 +112,7 @@
         Мотивирующие фитнес-браслеты помогут найти в себе силы<br /> не пропускать занятия и соблюдать диету.
       </p>
       <a class="btn" href="#">Подробнее</a>
+      <h2 class="visually-hidden">Характеристики товара</h2>
       <table class="promo-item features">
         <tr class="promo-item-features-values">
           <td>
@@ -137,6 +141,7 @@
         Этот обычный, на первый взгляд, квадрокоптер оснащен<br />мощным лазером, замаскированным под стандартную камеру.
       </p>
       <a class="btn" href="#">Подробнее</a>
+      <h2 class="visually-hidden">Характеристики товара</h2>
       <table class="promo-item features">
         <tr class="promo-item-features-values">
           <td>
@@ -164,22 +169,22 @@
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="items-categories-list">
         <li>
-          Виртуальная реальность
+          <a href="#">Виртуальная реальность</a>
         </li>
         <li>
-          Моноподы для селфи
+          <a href="#">Моноподы для селфи</a>
         </li>
         <li>
-          Экшн-камеры
+          <a href="#">Экшн-камеры</a>
         </li>
         <li>
-          Фитнес-браслеты
+          <a href="#">Фитнес-браслеты</a>
         </li>
         <li>
-          Умные часы
+          <a href="#">Умные часы</a>
         </li>
         <li>
-          Квадрокоптеры
+          <a href="#">Квадрокоптеры</a>
         </li>
       </ul>
     </section>
@@ -261,7 +266,7 @@
         <p>
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
         </p>
-        <img src="img/map.png" title="map" alt="map" width="560" height="222" />
+        <img src="img/map.png" title="map" alt="Москва, ул.Строителей, 15" width="560" height="222" />
       </section>
     </section>
   </main>
@@ -291,12 +296,12 @@
     </p>
     <ul class="social-btns">
       <li>
-        <a class="social-btn facebook" href="">Facebook</a>
+        <a class="social-btn facebook" href="#"><span class="visually-hidden">Facebook</span></a>
       </li>
       <li>
-        <a class="social-btn instagram" href="">Instagram</a></li>
+        <a class="social-btn instagram" href="#"><span class="visually-hidden">Instagram</span></a></li>
       <li>
-        <a class="social-btn twitter" href="">Twitter</a></li>
+        <a class="social-btn twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
     </ul>
   </footer>
 </body>
