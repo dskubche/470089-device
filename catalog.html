@@ -124,35 +124,30 @@
             </ul>
           </div>
         </fieldset>
+        <button class="btn" type="submit">Показать</button>
       </form>
-      <button class="btn" >Показать</button>
-      <!--Исправила ссылку "Показать" на button, тк скорее всего пользователь
-       не перейдет на другую страницу сайта, просто с правой стороны загрузится новая галерея товаров-->
     </aside>
     <section class="catalog-items-gallery">
       <h2 class="visually-hidden">Галерея товаров</h2>
       <div class="catalog-sort-items">
-        <!--По той же логике ссылки ниже исправлены на button. По сути мы же никуда не ссылаемся,
-        а отображаем разную информацию в галерее товаров в зависимости от того, какой тип
-        сортировки выберет пользователь.-->
         <h3>Cортировка:</h3>
         <ul class="catalog-sort-list">
           <li>
-            <button class="sort-btn">По цене</button>
+            <a class="sort-btn" href="#">По цене</a>
           </li>
           <li>
-            <button class="sort-btn">По типу</button>
+            <a class="sort-btn" href="#">По типу</a>
           </li>
           <li>
-            <button class="sort-btn">По популярности</button>
+            <a class="sort-btn" href="#">По популярности</a>
           </li>
         </ul>
         <ul class="catalog-sort-icons">
           <li>
-            <button class="sort-btn"><span class="visually-hidden">По возрастанию</span></button>
+            <a class="sort-btn" href="#"><span class="visually-hidden">По возрастанию</span></a>
           </li>
           <li>
-            <button class="sort-btn"><span class="visually-hidden">По убыванию</span></button>
+            <a class="sort-btn" href="#"><span class="visually-hidden">По убыванию</span></a>
           </li>
         </ul>
       </div>
@@ -179,22 +174,21 @@
         </li>
       </ul>
       <h2 class="visually-hidden">Переключение страниц</h2>
-      <!--Тоже решила. что ниже логичнее исправить на кнопки, тк пользователь остается в рамках одной страницы.-->
       <ul class="catalog-items-navigation">
         <li>
-          <button class="btn-navigation">Вперед</button>
+          <a href="#" class="btn-navigation">Вперед</a>
         </li>
         <li>
-            <button class="btn-navigation">1</button>
+          <a href="#" class="btn-navigation">1</a>
         </li>
         <li>
-            <button class="btn-navigation">2</button>
+          <a href="#" class="btn-navigation">2</a>
         </li>
         <li>
-            <button class="btn-navigation">3</button>
+          <a href="#" class="btn-navigation">3</a>
         </li>
         <li>
-            <button class="btn-navigation">Назад</button>
+          <a href="#" class="btn-navigation">Назад</a>
         </li>
       </ul>
     </section>
