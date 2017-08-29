@@ -582,7 +582,11 @@ body a {
 }
 
 .promo-slider-inner {
-  margin-top: -35px;
+  margin: 0;
+  padding: 0;
+  margin-top: -115px;
+  margin-bottom: 95px;
+  padding-top: 80px;
   position: relative;
   z-index: 2;
 }
@@ -660,7 +664,6 @@ body a {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin-top: 93px;
   margin-bottom: 185px;
 }
 
@@ -805,14 +808,17 @@ body a {
 }
 
 .navigation-footer-wrapper .address {
-  margin-right: 125px;
+  margin-right: 160px;
 }
 
 .client-navigation-footer {
   display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
   width: 430px;
   justify-content: space-between;
-  margin-right: 195px;
+  margin-right: 180px;
 }
 
 .footer-low-wrapper {
@@ -879,8 +885,10 @@ body a {
 
 .filter-sort-heading {
   display: flex;
-  background-image: linear-gradient(to right, #dbdbdb, #dbdbdb 421px, #ebebeb 421px, #ebebeb);
   padding-bottom: 5px;
+  background-image: linear-gradient(to right, #dbdbdb, #dbdbdb 470px, #ebebeb 470px, #ebebeb);
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .filter-sort-title:nth-child(1) {
@@ -901,15 +909,15 @@ body a {
 
 .filter-sort-wrapper {
   display: flex;
-  width: 1260px;
-  margin: 0;
+  width: 1440px;
+  margin: 0 auto;
   padding: 0;
 }
 
 .catalog-filter-items {
   background-color: #eeeeee;
-  width: 201px;
-  padding-left: 150px;
+  width: 200px;
+  padding-left: 200px;
   padding-right: 70px;
 }
 
@@ -920,7 +928,8 @@ body a {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-left: 72px;
+  padding-left: 70px;
+  padding-right: 140px;
   margin-top: 65px;
   margin-bottom: 0px;
 }
