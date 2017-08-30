@@ -14,6 +14,7 @@
 
 body {
   font-size: 15px;
+  min-width: 1440px;
   line-height: 30px;
   font-family: "OpenSans", Arial, sans-serif;
   font-weight: lighter;
@@ -119,6 +120,8 @@ body a {
 
 .main-footer {
   background-color: #464646;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -326,6 +329,8 @@ body a {
 
 .services {
   background-color: #e5e5e5;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .logo:hover, .site-options-footer-item a:hover, .client-navigation-footer-item a:hover, .social-btn:hover, .html-logo:hover {
