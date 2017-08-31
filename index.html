@@ -72,6 +72,16 @@
       <h2 class="visually-hidden">Популярные товары</h2>
       <div class="promo-slider">
         <div class="promo-slider-inner">
+          <form>
+            <input type="radio" id="selfie-stick" value="selfie-stick" name="promo-item-choice" checked>
+            <input type="radio" id="fitness-bracelet" value="fitness-bracelet" name="promo-item-choice">
+            <input type="radio" id="quadrocopter" value="quadrocopter" name="promo-item-choice">
+            <div class="promo-slider-controls">
+              <label for="selfie-stick"></label>
+              <label for="fitness-bracelet"></label>
+              <label for="quadrocopter"></label>
+            </div>
+          </form>
           <div class="promo-slider-slides">
             <article class="promo-item">
               <div class="slider-photo-wrapper">
@@ -84,16 +94,8 @@
                 </p>
                 <div class="slider-info-wrapper">
                   <a class="btn" href="#">Подробнее</a>
-                  <div class="slider-radio-btn-wrapper">
-                    <input type="radio" id="selfie-stick" value="selfie-stick" name="promo-item-choice" checked>
-                    <input type="radio" id="fitness-bracelet" value="fitness-bracelet" name="promo-item-choice">
-                    <input type="radio" id="quadrocopter" value="quadrocopter" name="promo-item-choice">
-                  </div>
-                  <div class="promo-slider-controls">
-                    <label for="selfie-stick"><span class="visually-hidden">Селфи-палка</span></label>
-                    <label for="fitness-bracelet"><span class="visually-hidden">Фитнесс-браслет</span></label>
-                    <label for="quadrocopter"><span class="visually-hidden">Квадрокоптер</span></label>
-                  </div>
+
+
                 </div>
                 <h4 class="visually-hidden">Характеристики товара</h4>
                 <table class="promo-item-features">
@@ -245,13 +247,13 @@
       <div class="wrapper">
         <h2 class="visually-hidden">Сервисы</h2>
         <ul class="services-list">
-          <li>
+          <li class="service-list-item">
             <a class="btn" href="#">Доставка</a>
           </li>
-          <li>
+          <li class="service-list-item">
             <a class="btn" href="#">Гарантия</a>
           </li>
-          <li>
+          <li class="service-list-item">
             <a class="btn" href="#">Кредит</a>
           </li>
         </ul>
