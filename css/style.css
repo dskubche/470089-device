@@ -1471,7 +1471,8 @@ input[type=radio] {
 .catalog-sort-list {
   display: flex;
   width: 275px;
-  margin: 0 padding:0;
+  margin: 0;
+   padding:0;
   margin-top: 20px;
   justify-content: space-between;
   margin-right: 200px;
@@ -1498,11 +1499,171 @@ input[type=radio] {
   position: relative;
 }
 
+.modal
+{
+  position: fixed;
+}
 
-/*.modal-write-us {
-
-  width: 960px;
-  background: green;
-  padding: 95px 100px auto 100px;
+.modal-write-us {
+  display: none;
+  background-color: #ffffff;
+  width: 760px;
+  bottom: 1500px;
+  left: 180px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-}*/
+  min-height: 455px;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+}
+
+.email-name-wrapper
+{
+  display: flex;
+}
+
+.modal-write-us label
+{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.modal-write-us label:nth-child(1){
+  margin-right: 40px;
+}
+
+.email-name-wrapper input[type="text"], .email-name-wrapper input[type="email"]
+{
+  width: 340px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  background-color: #f2f2f2;
+  margin-top: 12px;
+  border: none;
+  opacity: 0.4;
+  outline: none;
+}
+
+
+.modal-write-us textarea
+{
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  background:  #f2f2f2;
+  padding-left: 20px;
+  padding-top: 16px;
+  margin-top: 12px;
+  margin-bottom: 40px;
+  border: none;
+  opacity: 0.4;
+  outline: none;
+  resize: none;
+}
+
+.email-name-wrapper input[type="text"]:hover, .email-name-wrapper input[type="email"]:hover,  .modal-write-us textarea:hover{
+  opacity: 1;
+}
+
+.email-name-wrapper input[type="text"]:focus, .email-name-wrapper input[type="email"]:focus,  .modal-write-us textarea:focus{
+  border: 4px solid #f7e296;
+  background: none;
+}
+
+.email-name-wrapper input[type="text"]:invalid, .email-name-wrapper input[type="email"]:invalid,  .modal-write-us textarea:invalid{
+  opacity: 0.5;
+  background: #f6dada;
+}
+
+.modal-write-us .btn
+{
+
+  border: none;
+  background: none;
+  background-image: linear-gradient(to bottom, rgba(256, 256, 256, 0), rgba(256, 256, 256, 0) 15px, #f0c52e 15px, #f0c52e 25px, rgba(256, 256, 256, 0) 25px, rgba(256, 256, 256, 0));
+  outline: none;
+}
+
+.modal-write-us .btn:hover
+ {
+  background-image: none;
+  height: 42px;
+  background: #f0c52e;
+}
+
+.modal-write-us btn:active {
+
+  background-image: none;
+  color: rgba(0, 0, 0, 0.3);
+  height: 42px;
+  background-color: #f0c52e;}
+
+
+.modal-write-us-close{
+  background: none;
+  border: none;
+  outline: none;
+  opacity: 0.5;
+  position: absolute;
+  right: 22px;
+  top: 23px;
+}
+
+.modal-write-us-close:hover
+{
+  opacity: 1;
+}
+
+.modal-write-us-close:focus
+{
+  opacity: 0.3;
+}
+
+.modal-map
+{
+  display: none;
+  width: 760px;
+  bottom: 800px;
+  left: 180px;
+  position: relative;
+}
+
+.map-wrapper
+{
+  position: relative;
+  width: 990px;
+}
+
+.modal-map-close{
+  background: none;
+  border: none;
+  outline: none;
+  opacity: 0.5;
+  position: absolute;
+  right: 32px;
+  top: 23px;
+}
+
+.modal-map-close:hover
+{
+  opacity: 1;
+}
+
+.modal-map-close:focus
+{
+  opacity: 0.3;
+}

@@ -384,20 +384,25 @@
       </div>
     </div>
   </footer>
-  <!--  <section class="modal-write-us">
-    <form action ="#" method="post">
-<div class="email-name-wrapper">
-
-</div>
-      <label for="name">Ваше имя</label><br />
-      <input type="text" id="name" placeholder="Представьтесь, пожалуйста" />
-      <label for="email">Ваш email</label><br />
-      <input type="text" id="email" placeholder="Для отправки ответа" />
-      <label for="letter">Teкст письма</label>
-      <input type="textarea"id="letter" placeholder="В свободной форме" />
-    </form>
-  <button class="modal-close" type="button">Закрыть</button>
-</section>-->
 </body>
-
+<section class="modal modal-write-us">
+  <form action="#" method="post">
+    <div class="email-name-wrapper">
+      <label for="name">Ваше имя<br />
+<input type="text" id="name" placeholder="Представьтесь, пожалуйста" /></label>
+      <label for="email">Ваш email<br />
+<input type="email" id="email" placeholder="Для отправки ответа" /></label>
+    </div>
+    <label for="letter">Teкст письма<br />
+    <textarea id="letter" rows="8" cols="104" placeholder="В свободной форме"></textarea>
+  </form>
+<button class="btn" type="button">Отправить</button>
+<button class="modal-write-us-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg></button>
+</section>
+<section class="modal modal-map">
+  <div class="map-wrapper">
+  <img src="img/map-big.png" title="ул.Строителей, 15" alt="ул.Строителей, 15" width="990" height="590" />
+  <button class="modal-map-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg></button>
+  </div>
+</section>
 </html>
