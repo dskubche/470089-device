@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header catalog container">
-    <a href="#"><h1 class="header-logo">Device</h1></a>
+    <a href="index.html"><h1 class="header-logo">Device</h1></a>
     <nav class="main-navigation">
       <ul class="client-navigation-catalog">
         <li class="client-navigation-item-catalog">
@@ -33,7 +34,7 @@
           <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>Корзина</a>
         </li>
       </ul>
-      <ul class="site-navigation">
+      <ul class="site-navigation catalog">
         <li class="site-navigation-item">
           <a href="#" class="catalog-navigation-link">Каталог товаров</a>
           <ul class="catalog-navigation">
@@ -69,7 +70,7 @@
       </ul>
     </nav>
   </header>
-  <main class="catalog-containter ">
+  <main class="catalog-container">
     <div class="catalog-title wrapper">
       <h2 class="object-title">Моноподы для селфи</h2>
       <ul class="catalog-breadcrumbs">
@@ -127,23 +128,23 @@
             <h4 class="filter-title">Цвет</h4>
             <ul class="catalog-filter-color-list">
               <li>
-                <input type="checkbox" name="black" value="black" id="black" checked/>
+                <input type="checkbox" name="black" value="black" id="black" class="black" checked/>
                 <label for="black">Черный</label>
               </li>
               <li>
-                <input type="checkbox" name="white" value="white" id="white" />
+                <input type="checkbox" name="white" value="white" id="white" class="white" />
                 <label for="white">Белый</label>
               </li>
               <li>
-                <input type="checkbox" name="blue" value="blue" id="blue" checked/>
+                <input type="checkbox" name="blue" value="blue" id="blue" class="blue" checked/>
                 <label for="blue">Синий</label>
               </li>
               <li>
-                <input type="checkbox" name="red" value="red" id="red" checked/>
+                <input type="checkbox" name="red" value="red" id="red" class="red" checked/>
                 <label for="red">Красный</label>
               </li>
               <li>
-                <input type="checkbox" name="pink" value="pink" id="pink" />
+                <input type="checkbox" name="pink" value="pink" id="pink" class="pink" />
                 <label for="pink">Розовый</label>
               </li>
             </ul>
@@ -152,11 +153,11 @@
             <h4 class="filter-title">Bluetooth</h4>
             <ul class="catalog-filter-bluetooth-list">
               <li>
-                <input type="radio" name="bluetooth" value="yes" id="yes" checked/>
+                <input type="radio" name="bluetooth" value="yes" id="yes" class="yes" checked/>
                 <label for="yes">Есть</label>
               </li>
               <li>
-                <input type="radio" name="bluetooth" value="no" id="no" />
+                <input type="radio" name="bluetooth" value="no" id="no" class="no"/>
                 <label for="no">Нет</label>
               </li>
             </ul>
@@ -206,7 +207,6 @@
               <a href="#" class="btn">В корзину</a>
               <a href="#" class="compare-item">Добавить к сравнению</a>
               <img src="img/item-4.jpg" title="Селфи-палка «Следуй за мной»" alt="Селфи-палка «Следуй за мной»" width="360" height="380" />
-
             </div>
             <div class="item-description">
               <h4 class="catalog-item-name">Селфи-палка «Следуй за<br /> мной»</h4>
@@ -281,6 +281,7 @@
             <a class="social-btn twitter" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#FFF" d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"/></svg><span class="visually-hidden">Twitter</span></a></li>
         </ul>
         <div class="html-logo">
+          <span class="visually-hidden">Логотип HTML-Acedemy</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09"><path fill="#FFC600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
         </div>
       </div>

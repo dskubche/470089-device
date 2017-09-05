@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
 </head>
@@ -50,8 +51,7 @@
               <a href="#">Умные часы</a>
             </li>
             <li class="catalog-navigation-item">
-              <a href="#">Экшн-камеры</a>
-            </li>
+              <a href="#">Экшн-камеры</a></li>
           </ul>
         </li>
         <li class="site-navigation-item">
@@ -73,9 +73,9 @@
       <div class="promo-slider">
         <div class="promo-slider-inner">
           <form>
-            <input type="radio" id="selfie-stick" value="selfie-stick" name="promo-item-choice" checked>
-            <input type="radio" id="fitness-bracelet" value="fitness-bracelet" name="promo-item-choice">
-            <input type="radio" id="quadrocopter" value="quadrocopter" name="promo-item-choice">
+            <input type="radio" id="selfie-stick" class="selfie-stick" value="selfie-stick" name="promo-item-choice" checked>
+            <input type="radio" id="fitness-bracelet" class="fitness-bracelet" value="fitness-bracelet" name="promo-item-choice">
+            <input type="radio" id="quadrocopter" class="quadrocopter" value="quadrocopter" name="promo-item-choice">
             <div class="promo-slider-controls">
               <label for="selfie-stick"></label>
               <label for="fitness-bracelet"></label>
@@ -84,14 +84,13 @@
           </form>
           <div class="promo-slider-slides">
             <article class="promo-item">
-              <div class="slider-photo-wrapper">
+              <div class="slider-photo-wrapper first-photo-wrapper">
                 <img src="img/slider-1.png" title="Палка для селфи" alt="Палка для селфи" width="384" height="486" />
               </div>
               <div class="promo-item-description">
                 <h3 class="object-title">Делай селфи,<br />как Бен Стиллер!</h3>
                 <p>
-                  Самая длинная палка для селфи доступна в нашем магазине.<br /> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                </p>
+                  Самая длинная палка для селфи доступна в нашем магазине.<br /> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                 <div class="slider-info-wrapper">
                   <a class="btn" href="#">Подробнее</a>
 
@@ -125,7 +124,7 @@
               </div>
             </article>
             <article class="promo-item visually-hidden">
-              <div class="slider-photo-wrapper">
+              <div class="slider-photo-wrapper second-photo-wrapper">
                 <img src="img/slider-2.png" title="Фитнес-браслет" alt="Фитнес-браслет" width="345" height="485" />
               </div>
               <div class="promo-item-description">
@@ -160,7 +159,7 @@
               </div>
             </article>
             <article class="promo-item visually-hidden">
-              <div class="slider-photo-wrapper">
+              <div class="slider-photo-wrapper third-photo-wrapper">
                 <img src="img/slider-3.png" title="Квадрокоптер" alt="Квадрокоптер" width="526" height="334" />
               </div>
               <div class="promo-item-description">
@@ -379,30 +378,34 @@
             <a class="social-btn twitter" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#FFF" d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"/></svg><span class="visually-hidden">Twitter</span></a></li>
         </ul>
         <div class="html-logo">
+          <span class="visually-hidden">Логотип HTML-Acedemy</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09"><path fill="#FFC600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
         </div>
       </div>
     </div>
   </footer>
-</body>
-<section class="modal modal-write-us">
-  <form action="#" method="post">
-    <div class="email-name-wrapper">
-      <label for="name">Ваше имя<br />
+  <section class="modal modal-write-us">
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <form action="#" method="post">
+      <div class="email-name-wrapper">
+        <label for="name">Ваше имя<br />
 <input type="text" id="name" placeholder="Представьтесь, пожалуйста" /></label>
-      <label for="email">Ваш email<br />
+        <label for="email">Ваш email<br />
 <input type="email" id="email" placeholder="Для отправки ответа" /></label>
+      </div>
+      <label for="letter">Teкст письма<br />
+    <textarea id="letter" rows="8" cols="104" placeholder="В свободной форме"></textarea></label>
+    </form>
+    <button class="btn" type="button">Отправить</button>
+    <button class="modal-write-us-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg></button>
+  </section>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Большая карта</h2>
+    <div class="map-wrapper">
+      <img src="img/map-big.png" title="ул.Строителей, 15" alt="ул.Строителей, 15" width="990" height="590" />
+      <button class="modal-map-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg></button>
     </div>
-    <label for="letter">Teкст письма<br />
-    <textarea id="letter" rows="8" cols="104" placeholder="В свободной форме"></textarea>
-  </form>
-<button class="btn" type="button">Отправить</button>
-<button class="modal-write-us-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg></button>
-</section>
-<section class="modal modal-map">
-  <div class="map-wrapper">
-  <img src="img/map-big.png" title="ул.Строителей, 15" alt="ул.Строителей, 15" width="990" height="590" />
-  <button class="modal-map-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg></button>
-  </div>
-</section>
+  </section>
+</body>
+
 </html>
