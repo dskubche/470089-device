@@ -34,10 +34,10 @@
           <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>Корзина</a>
         </li>
       </ul>
-      <ul class="site-navigation catalog">
-        <li class="site-navigation-item">
+      <ul class="site-navigation">
+        <li class="site-navigation-item site-navigation-item-catalog">
           <a href="#" class="catalog-navigation-link">Каталог товаров</a>
-          <ul class="catalog-navigation">
+          <ul class="catalog-navigation visually-hidden">
             <li class="catalog-navigation-item">
               <a href="#">Виртуальная реальность</a>
             </li>
@@ -54,8 +54,7 @@
               <a href="#">Умные часы</a>
             </li>
             <li class="catalog-navigation-item">
-              <a href="#">Экшн-камеры</a>
-            </li>
+              <a href="#">Экшн-камеры</a></li>
           </ul>
         </li>
         <li class="site-navigation-item">
@@ -68,6 +67,7 @@
           <a href="#">Контакты</a>
         </li>
       </ul>
+
     </nav>
   </header>
   <main class="catalog-container">
@@ -102,7 +102,7 @@
       </ul>
       <ul class="catalog-sort-icons">
         <li>
-          <a class="sort-btn" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg><span class="visually-hidden">По возрастанию</span></a>
+          <a class="sort-btn" href="#"><span class="visually-hidden">По возрастанию</span><div class="svgimage"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></div></a>
         </li>
         <li>
           <a class="sort-btn" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg><span class="visually-hidden">По убыванию</span></a>
@@ -112,7 +112,7 @@
 
     <div class="filter-sort-wrapper">
       <aside class="catalog-filter-items">
-        <form method="get" action="#">
+        <form method="get" action="#" class="catalog-filter-form">
           <div class="catalog-filter-price">
             <h4 class="filter-title">Стоимость</h4>
             <div class="price-range">
@@ -129,23 +129,23 @@
             <ul class="catalog-filter-color-list">
               <li>
                 <input type="checkbox" name="black" value="black" id="black" class="black" checked/>
-                <label for="black">Черный</label>
+                <label for="black" tabindex="0">Черный</label>
               </li>
               <li>
                 <input type="checkbox" name="white" value="white" id="white" class="white" />
-                <label for="white">Белый</label>
+                <label for="white" tabindex="0">Белый</label>
               </li>
               <li>
                 <input type="checkbox" name="blue" value="blue" id="blue" class="blue" checked/>
-                <label for="blue">Синий</label>
+                <label for="blue" tabindex="0">Синий</label>
               </li>
               <li>
                 <input type="checkbox" name="red" value="red" id="red" class="red" checked/>
-                <label for="red">Красный</label>
+                <label for="red" tabindex="0">Красный</label>
               </li>
               <li>
                 <input type="checkbox" name="pink" value="pink" id="pink" class="pink" />
-                <label for="pink">Розовый</label>
+                <label for="pink" tabindex="0">Розовый</label>
               </li>
             </ul>
           </div>
@@ -154,15 +154,15 @@
             <ul class="catalog-filter-bluetooth-list">
               <li>
                 <input type="radio" name="bluetooth" value="yes" id="yes" class="yes" checked/>
-                <label for="yes">Есть</label>
+                <label for="yes" tabindex="0">Есть</label>
               </li>
               <li>
                 <input type="radio" name="bluetooth" value="no" id="no" class="no"/>
-                <label for="no">Нет</label>
+                <label for="no" tabindex="0">Нет</label>
               </li>
             </ul>
           </div>
-          <a class="btn">Показать</a>
+          <button type="submit" class="btn">Показать</button>
         </form>
       </aside>
       <section class="catalog-items-gallery">
@@ -287,6 +287,6 @@
       </div>
     </div>
   </footer>
+<script src="js/script-catalog.js"></script>
 </body>
-
 </html>

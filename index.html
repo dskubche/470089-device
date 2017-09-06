@@ -32,9 +32,9 @@
         </li>
       </ul>
       <ul class="site-navigation">
-        <li class="site-navigation-item">
-          <a href="catalog.html" class="catalog-navigation-link">Каталог товаров</a>
-          <ul class="catalog-navigation">
+        <li class="site-navigation-item site-navigation-item-catalog">
+          <a href="#" class="catalog-navigation-link">Каталог товаров</a>
+          <ul class="catalog-navigation visually-hidden">
             <li class="catalog-navigation-item">
               <a href="#">Виртуальная реальность</a>
             </li>
@@ -77,9 +77,9 @@
             <input type="radio" id="fitness-bracelet" class="fitness-bracelet" value="fitness-bracelet" name="promo-item-choice">
             <input type="radio" id="quadrocopter" class="quadrocopter" value="quadrocopter" name="promo-item-choice">
             <div class="promo-slider-controls">
-              <label for="selfie-stick"></label>
-              <label for="fitness-bracelet"></label>
-              <label for="quadrocopter"></label>
+              <label for="selfie-stick" tabindex="0"></label>
+              <label for="fitness-bracelet" tabindex="0"></label>
+              <label for="quadrocopter" tabindex="0"></label>
             </div>
           </form>
           <div class="promo-slider-slides">
@@ -210,7 +210,7 @@
               </div><span class="item-title-short">Виртуальная реальность</span></a>
           </li>
           <li class="items-categories-list-item">
-            <a class="items-categories-link" href="#">
+            <a class="items-categories-link" href="catalog.html">
               <div class="items-categories-decoration">
                 <svg xmlns="http://www.w3.org/2000/svg" width="86" height="117" viewBox="0 0 86 117"><g fill="#363636"><path d="M82.821 4.011H3.33A3.188 3.188 0 0 0 .142 7.199v46.413a3.187 3.187 0 0 0 3.188 3.189h79.492a3.188 3.188 0 0 0 3.189-3.189V7.199a3.189 3.189 0 0 0-3.19-3.188zM8.392 37.236h-.226a3.19 3.19 0 0 1-3.189-3.189v-7.283a3.188 3.188 0 0 1 3.189-3.188h.226v13.66zm61.231 15.172H13.341V8.402h56.282v44.006zM78.4 34.552c-2.289 0-4.146-1.855-4.146-4.147s1.856-4.147 4.146-4.147a4.146 4.146 0 1 1 0 8.294zM31.497 0h23.157v2.758H31.497zM46.608 64.861v-2.973h8.046V59.13H31.498v2.758h8.045v35.246a6.068 6.068 0 0 0-3.635 5.559V117h14.335v-14.307a6.062 6.062 0 0 0-3.636-5.557v-27.99h4.796l5.051 1.213v-6.711l-5.051 1.213h-4.795z"/></g></svg>
               </div><span class="item-title-short">Моноподы для селфи</span></a>
@@ -331,8 +331,8 @@
         <p>
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
         </p>
-        <img src="img/map.png" title="map" alt="Москва, ул.Строителей, 15" width="560" height="222" />
-        <a class="btn" href="#">Напишите нам</a>
+        <a class="map-open" href="#"><img src="img/map.png" title="map" alt="Москва, ул.Строителей, 15" width="560" height="222"/></a>
+        <a class="btn btn-write-us" href="#">Напишите нам</a>
       </section>
     </div>
   </main>
@@ -386,26 +386,28 @@
   </footer>
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">Напишите нам</h2>
-    <form action="#" method="post">
+    <form action="https://echo.htmlacademy.ru" method="post">
       <div class="email-name-wrapper">
         <label for="name">Ваше имя<br />
-<input type="text" id="name" placeholder="Представьтесь, пожалуйста" /></label>
+<input type="text" id="name" name="username" placeholder="Представьтесь, пожалуйста" /></label>
         <label for="email">Ваш email<br />
-<input type="email" id="email" placeholder="Для отправки ответа" /></label>
+<input type="email" id="email" name="email" placeholder="Для отправки ответа" /></label>
       </div>
       <label for="letter">Teкст письма<br />
-    <textarea id="letter" rows="8" cols="104" placeholder="В свободной форме"></textarea></label>
+    <textarea id="letter" name="letter" rows="8" cols="104" placeholder="В свободной форме"></textarea></label>
+  <button class="btn" type="submit">Отправить</button>
     </form>
-    <button class="btn" type="button">Отправить</button>
     <button class="modal-write-us-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg></button>
   </section>
   <section class="modal modal-map">
     <h2 class="visually-hidden">Большая карта</h2>
     <div class="map-wrapper">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1504713999757" width="990" height="590" style="border:0" allowfullscreen></iframe>
       <img src="img/map-big.png" title="ул.Строителей, 15" alt="ул.Строителей, 15" width="990" height="590" />
       <button class="modal-map-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg></button>
     </div>
   </section>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
