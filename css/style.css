@@ -239,11 +239,18 @@ img {
   width: 315px;
   margin: 0;
   padding: 0;
-  margin-left: 5px;
+  margin-left: 98px;
+}
+
+.site-search-form
+{
+  position: relative;
 }
 
 .site-search-label {
+  position: absolute;
   margin-left: 63px;
+  bottom: -5px;
 }
 
 .site-search:hover {
@@ -443,6 +450,10 @@ img {
   opacity: 1;
 }
 
+.catalog-sort-list-item:nth-child(1) a{
+  opacity: 1;
+}
+
 .svgimage:focus
 {
   opacity: 1;
@@ -567,8 +578,8 @@ img {
   margin: 0;
   padding: 0;
   margin-left: 71px;
-  margin-top: -6px;
-  margin-bottom: 73px;
+  transform: translateY(-10px);
+  margin-bottom: 63px;
 }
 
 .catalog-items-navigation li, .catalog-items-navigation-numbers li {
@@ -738,7 +749,7 @@ input[type=radio] {
   margin: 0;
   padding: 0;
   border-top: 2px solid black;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .catalog-filter-color-list input[type=checkbox] {
@@ -759,9 +770,10 @@ input[type=radio] {
 .catalog-filter-color-list label {
   display: inline-block;
   vertical-align: middle;
-  padding-left: 35px;
+  padding-left: 37px;
   width: 95px;
-  height: 30px;
+  height: 25px;
+  margin-top: 5px;
   margin-bottom: 10px;
   cursor: pointer;
   position: relative;
@@ -807,9 +819,10 @@ input[type=radio] {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  padding-left: 35px;
+  padding-left: 37px;
   width: 95px;
-  height: 30px;
+  height: 25px;
+  margin-top: 5px;
   margin-bottom: 10px;
   cursor: pointer;
   outline: none;
@@ -1356,7 +1369,7 @@ margin: 0;
 .about-us {
   padding: 0;
   margin: 0;
-  width: 460px;
+  width: 480px;
   margin-right: 120px;
   position: relative;
 }
@@ -1386,7 +1399,7 @@ margin: 0;
   width: 80px;
   position: absolute;
   background-color: #000000;
-  top: -47px;
+  top: -50px;
   left: 0;
 }
 
@@ -1564,7 +1577,7 @@ margin: 0;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   background-image: -webkit-linear-gradient(left, #dbdbdb, #dbdbdb 470px, #ebebeb 470px, #ebebeb);
   background-image: -o-linear-gradient(left, #dbdbdb, #dbdbdb 470px, #ebebeb 470px, #ebebeb);
   background-image: linear-gradient(to right, #dbdbdb, #dbdbdb 470px, #ebebeb 470px, #ebebeb);
@@ -1585,7 +1598,7 @@ margin: 0;
   padding: 0;
   margin-top: 25px;
   margin-left: 155px;
-  margin-right: 20px;
+  margin-right: 58px;
 }
 
 .filter-sort-wrapper {
@@ -1630,14 +1643,14 @@ margin: 0;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 275px;
+  width: 280px;
   margin: 0;
   padding: 0;
   margin-top: 20px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-right: 200px;
+  margin-right: 235px;
 }
 
 .catalog-sort-icons {
@@ -1671,8 +1684,12 @@ margin: 0;
 .catalog-gallery-list-item {
   margin: 0;
   padding: 0;
+  padding-top: 3px;
   position: relative;
 }
+
+
+
 
 @-webkit-keyframes modal-slide {
   0% {
@@ -1853,8 +1870,6 @@ margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 .modal-write-us label {
@@ -1872,7 +1887,7 @@ margin: 0;
 }
 
 .email-name-wrapper input[type="text"], .email-name-wrapper input[type="email"] {
-  width: 325px;
+  width: 348px;
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 20px;
@@ -1886,6 +1901,7 @@ margin: 0;
   border: none;
   opacity: 0.4;
   outline: none;
+  border: 4px solid rgba(0,0,0,0);
 }
 
 .modal-write-us textarea {
@@ -1903,6 +1919,7 @@ margin: 0;
   opacity: 0.4;
   outline: none;
   resize: none;
+  border: 4px solid rgba(0,0,0,0);
 }
 
 .email-name-wrapper input[type="text"]:hover, .email-name-wrapper input[type="email"]:hover, .modal-write-us textarea:hover {
@@ -1921,6 +1938,7 @@ margin: 0;
 
 .modal-write-us .btn {
   border: none;
+  height: 42px;
   background: none;
   background-image: -webkit-linear-gradient(top, rgba(256, 256, 256, 0), rgba(256, 256, 256, 0) 15px, #f0c52e 15px, #f0c52e 25px, rgba(256, 256, 256, 0) 25px, rgba(256, 256, 256, 0));
   background-image: -o-linear-gradient(top, rgba(256, 256, 256, 0), rgba(256, 256, 256, 0) 15px, #f0c52e 15px, #f0c52e 25px, rgba(256, 256, 256, 0) 25px, rgba(256, 256, 256, 0));
