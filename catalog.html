@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style-min.css">
+  <link rel="stylesheet" href="css/style_min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
@@ -118,8 +118,8 @@
             <div class="price-range">
               <div class="price-range-green">
               </div>
-              <button class="price-min-button"></button>
-              <button class="price-max-button"></button>
+              <div class="price-min-button"></div>
+              <div class="price-max-button"></div>
               <span class="price-min">от 0</span>
               <span class="price-max">до 5000</span>
             </div>
@@ -170,47 +170,50 @@
         <ul class="catalog-gallery-list">
           <li class="catalog-gallery-list-item">
             <div class="item">
-              <a href="#" class="btn">В корзину</a>
-              <a href="#" class="compare-item">Добавить к сравнению</a>
+              <button class="btn">В корзину</button>
+              <button class="compare-item">Добавить к сравнению</button>
               <img src="img/item-1.jpg" title="Любительская селфи-палка" alt="Любительская селфи-палка" width="360" height="380" />
 
             </div>
             <div class="item-description">
-              <h4 class="catalog-item-name">Любительская селфи-палка</h4>
+              <a href="#" class="catalog-item-name">Любительская селфи-палка</a>
               <p class="catalog-item-price">500 руб.</p>
             </div>
           </li>
           <li class="catalog-gallery-list-item">
             <div class="item">
-              <a href="#" class="btn">В корзину</a>
-              <a href="#" class="compare-item">Добавить к сравнению</a>
+              <button class="btn">В корзину</button>
+              <button class="compare-item">Добавить к сравнению</button>
               <img src="img/item-2.jpg" title="Профессиональная селфи-палка " alt="Профессиональная селфи-палка" width="360" height="380" />
             </div>
             <div class="item-description">
-              <h4 class="catalog-item-name">Профессиональная<br />селфи-палка</h4>
-              <p class="catalog-item-price">1500 руб.</p>
+              <a href="#" class="catalog-item-name">Профессиональная<br />селфи-палка</a>
+              <p class="catalog-item-price">1 500 руб.</p>
             </div>
           </li>
           <li class="catalog-gallery-list-item">
             <div class="item">
-              <a href="#" class="btn">В корзину</a>
-              <a href="#" class="compare-item">Добавить к сравнению</a>
+              <button class="btn">В корзину</button>
+              <button class="compare-item">Добавить к сравнению</button>
               <img src="img/item-3.jpg" title="Непотопляемая селфи-палка" alt="Непотопляемая селфи-палка" width="360" height="380" />
             </div>
             <div class="item-description">
-              <h4 class="catalog-item-name">Непотопляемая селфи-палка</h4>
-              <p class="catalog-item-price">2500 руб.</p>
+              <a href="#" class="catalog-item-name">Непотопляемая селфи-палка</a>
+              <p class="catalog-item-price">2 500 руб.</p>
             </div>
           </li>
           <li class="catalog-gallery-list-item">
             <div class="item">
-              <a href="#" class="btn">В корзину</a>
-              <a href="#" class="compare-item">Добавить к сравнению</a>
+              <button class="btn">В корзину</button>
+              <button class="compare-item">Добавить к сравнению</button>
               <img src="img/item-4.jpg" title="Селфи-палка «Следуй за мной»" alt="Селфи-палка «Следуй за мной»" width="360" height="380" />
             </div>
             <div class="item-description">
-              <h4 class="catalog-item-name">Селфи-палка «Следуй за<br /> мной»</h4>
-              <p class="catalog-item-price">4900 руб.</p>
+              <a class="catalog-item-name">Селфи-палка «Следуй за<br /> мной»</a>
+              <p class="catalog-item-price">4 900 руб.</p>
+            </div>
+            <div class="label-new">
+              New
             </div>
           </li>
         </ul>
@@ -245,7 +248,7 @@
         <a href="#">
           <p class="logo">Device</p>
         </a>
-        <ul class="site-options-footer">
+        <ul class="site-options-footer site-options-footer-catalog">
           <li class="site-options-footer-item">
             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#ffc600" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>Войти</a>
           </li>
@@ -257,7 +260,7 @@
           </li>
         </ul>
       </div>
-      <div class="navigation-footer-wrapper">
+      <div class="navigation-footer-wrapper navigation-footer-wrapper-catalog">
         <p class="address">
           г. Москва, ул. Строителей, 15
         </p>
