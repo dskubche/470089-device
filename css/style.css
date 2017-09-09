@@ -1398,8 +1398,9 @@ input[type=radio] {
 .about-us {
   padding: 0;
   margin: 0;
-  width: 480px;
-  margin-right: 120px;
+  width: 500px;
+  margin-right: 100px;
+  letter-spacing: 0;
   position: relative;
 }
 
@@ -1420,7 +1421,6 @@ input[type=radio] {
 
 .about-us p {
   margin-bottom: 28px;
-  width: 500px;
 }
 
 .about-us .object-title::before, .contacts .object-title::before {

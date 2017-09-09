@@ -1270,8 +1270,9 @@ input[type=radio] {
 }
 
 .about-us {
-  margin: 0 120px 0 0;
-  width: 480px
+  margin: 0 100px 0 0;
+  width: 500px;
+  letter-spacing: 0;
 }
 
 .contacts {
@@ -1302,7 +1303,7 @@ input[type=radio] {
 .delivery-companies {
   margin-top: 72px;
   padding: 0 0 0 34px;
-  margin-bottom: 57px
+  margin-bottom: 57px;
 }
 
 .delivery-companies li {
