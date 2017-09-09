@@ -1420,6 +1420,7 @@ input[type=radio] {
 
 .about-us p {
   margin-bottom: 28px;
+  width: 500px;
 }
 
 .about-us .object-title::before, .contacts .object-title::before {
