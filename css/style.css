@@ -692,6 +692,7 @@ img {
   padding-bottom: 9px;
 }
 
+
 .about-us .btn, .contacts .btn {
   min-width: 260px;
 }
@@ -1462,7 +1463,7 @@ input[type=radio] {
 
 .contacts img {
   margin-top: 22px;
-  margin-bottom: 58px;
+  margin-bottom: 60px;
 }
 
 .site-options-footer-wrapper {
